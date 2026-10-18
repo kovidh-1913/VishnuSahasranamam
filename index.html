@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7b1e16">
+
+  <title>శ్రీ విష్ణు సహస్రనామం | శ్రీమన్నారాయణ</title>
+
+  <meta name="description"
+    content="తెలుగులో శ్రీ విష్ణు సహస్రనామ స్తోత్రం చదవండి. శ్రీమన్నారాయణుని దివ్య నామస్మరణ.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #fff8eb;
+      --paper: #fffdf7;
+      --text: #492719;
+      --muted: #795b46;
+      --accent: #9d3021;
+      --gold: #d5a344;
+      --border: #ead8b8;
+      --shadow: 0 10px 35px #65391b12;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Noto Serif Telugu", serif;
+      line-height: 2;
+      transition: background .25s, color .25s;
+    }
+
+    body.dark {
+      --bg: #191714;
+      --paper: #24201b;
+      --text: #f8e9ce;
+      --muted: #d2bfa0;
+      --accent: #f0b46a;
+      --gold: #e4bd6b;
+      --border: #4a3b2b;
+      --shadow: 0 10px 35px #0003;
+    }
+
+    header {
+      text-align: center;
+      padding: 46px 18px 40px;
+      color: #fff5dc;
+      background:
+        radial-gradient(ellipse at top, #bd7040, transparent 65%),
+        linear-gradient(145deg, #57180f, #8e2919 60%, #54180f);
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .om {
+      color: #ffd982;
+      font-size: 42px;
+      line-height: 1.5;
+    }
+
+    header h1 {
+      font-size: clamp(27px, 5vw, 44px);
+      line-height: 1.6;
+      margin: 4px 0;
+    }
+
+    header p {
+      margin: 8px auto;
+      color: #ffe6bb;
+      max-width: 600px;
+    }
+
+    .ornament {
+      color: #ffdc87;
+      letter-spacing: 8px;
+      margin-top: 12px;
+    }
+
+    .controls {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      justify-content: center;
+      padding: 12px;
+      background: var(--paper);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    button, input {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      border-radius: 9px;
+      padding: 7px 13px;
+    }
+
+    button:hover {
+      border-color: var(--gold);
+    }
+
+    input {
+      width: min(100%, 320px);
+      padding: 9px 13px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      background: var(--bg);
+      color: var(--text);
+      outline-color: var(--gold);
+    }
+
+    main {
+      width: min(850px, 92%);
+      margin: 30px auto;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: clamp(18px, 4vw, 34px);
+      margin-bottom: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      color: var(--accent);
+      text-align: center;
+      font-size: 25px;
+      line-height: 1.7;
+      margin-top: 0;
+    }
+
+    .divider {
+      width: 100px;
+      height: 2px;
+      margin: 12px auto 24px;
+      background: var(--gold);
+    }
+
+    .verse {
+      font-size: 19px;
+      line-height: 2.15;
+      text-align: center;
+      white-space: pre-line;
+      overflow-wrap: anywhere;
+    }
+
+    .intro {
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .name-list {
+      font-size: 18px;
+      line-height: 2.3;
+      white-space: pre-line;
+      overflow-wrap: anywhere;
+    }
+
+    .name-list p {
+      padding: 7px 0;
+      margin: 0;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .name-list p:last-child {
+      border-bottom: none;
+    }
+
+    .note {
+      font-size: 14px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .back-top {
+      display: block;
+      margin: 25px auto 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 15px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 30px 12px;
+      }
+
+      .verse, .name-list {
+        font-size: 17px;
+      }
+
+      .controls {
+        gap: 6px;
+      }
+
+      button {
+        padding: 6px 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="top">
+    <div class="om">ॐ</div>
+    <h1>శ్రీ విష్ణు సహస్రనామం</h1>
+    <p>శ్రీమన్నారాయణుని దివ్య సహస్ర నామ స్తోత్రం</p>
+    <div class="ornament">❈ ✧ ❈</div>
+    <p>ఓం నమో నారాయణాయ</p>
+  </header>
+
+  <nav class="controls" aria-label="పఠన సాధనాలు">
+    <input
+      id="search"
+      type="search"
+      placeholder="శ్లోకం లేదా నామం వెతకండి..."
+      aria-label="శ్లోకం లేదా నామం వెతకండి">
+
+    <button id="smaller" type="button" aria-label="అక్షరాలు చిన్నగా">A−</button>
+    <button id="larger" type="button" aria-label="అక్షరాలు పెద్దగా">A+</button>
+    <button id="theme" type="button">🌙 రాత్రి మోడ్</button>
+    <button id="reset" type="button">చదవడం ప్రారంభించండి</button>
+  </nav>
+
+  <main>
+    <section class="card">
+      <h2>🪷 శ్రీ మహావిష్ణువుకు నమస్కారం</h2>
+      <div class="divider"></div>
+      <p class="verse">
+        శుక్లాంబరధరం విష్ణుం
+        శశివర్ణం చతుర్భుజమ్ ।
+        ప్రసన్నవదనం ధ్యాయేత్
+        సర్వవిఘ్నోపశాంతయే ॥
+      </p>
+      <p class="intro">
+        లోకానికి ఆధారమైన శ్రీమహావిష్ణువును భక్తితో స్మరిస్తూ
+        పఠనాన్ని ప్రారంభించండి.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>ధ్యాన శ్లోకం</h2>
+      <div class="divider"></div>
+      <div class="verse searchable">
+        క్షీరోదన్వత్ప్రదేశే శుచిమణివిలసత్సైకతే మౌక్తికానాం
+        మాలాక్లుప్తాసనస్థః స్ఫటికమణినిభైర్మౌక్తికైర్మండితాంగః ।
+
+        శుభ్రైరభ్రైరదభ్రైరుపరివిరచితైర్ముక్తపీయూష వర్షైః
+        ఆనందీ నః పునీయాదరినలినగదాశంఖపాణిర్ముకుందః ॥
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>శ్రీ విష్ణు సహస్రనామ స్తోత్రం</h2>
+      <div class="divider"></div>
+
+      <p class="intro">
+        మహాభారతంలోని అనుశాసనిక పర్వంలో భీష్ముడు
+        ధర్మరాజుకు ఉపదేశించిన పవిత్ర స్తోత్రం.
+      </p>
+
+      <h2 style="font-size:21px">ప్రారంభ శ్లోకం</h2>
+
+      <div class="verse searchable">
+        విశ్వం విష్ణుర్వషట్కారో
+        భూతభవ్యభవత్ప్రభుః ।
+        భూతకృద్భూతభృద్భావో
+        భూతాత్మా భూతభావనః ॥
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="name-list" id="names">
+        <p class="searchable">1. విశ్వం</p>
+        <p class="searchable">2. విష్ణుః</p>
+        <p class="searchable">3. వషట్కారః</p>
+        <p class="searchable">4. భూతభవ్యభవత్ప్రభుః</p>
+        <p class="searchable">5. భూతకృత్</p>
+        <p class="searchable">6. భూతభృత్</p>
+        <p class="searchable">7. భావః</p>
+        <p class="searchable">8. భూతాత్మా</p>
+        <p class="searchable">9. భూతభావనః</p>
+      </div>
+
+      <p class="note">
+        గమనిక: ఇది ప్రారంభ పఠన నమూనా మాత్రమే.
+        పూర్తి 1000 నామాలు, సంబంధిత శ్లోకాలను జోడించిన తర్వాత
+        ఈ వెబ్‌సైట్‌ను సంపూర్ణ పాఠంగా ఉపయోగించవచ్చు.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>🙏 మంగళం</h2>
+      <div class="divider"></div>
+      <p class="verse">
+        కాయేన వాచా మనసేంద్రియైర్వా
+        బుద్ధ్యాత్మనా వా ప్రకృతేః స్వభావాత్ ।
+
+        కరోమి యద్యత్ సకలం పరస్మై
+        నారాయణాయేతి సమర్పయామి ॥
+      </p>
+      <p class="intro">సర్వం శ్రీకృష్ణార్పణమస్తు</p>
+    </section>
+
+    <button class="back-top" type="button"
+      onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      ↑ పైకి వెళ్లండి
+    </button>
+  </main>
+
+  <footer>
+    <p>🪷 ఓం నమో భగవతే వాసుదేవాయ 🪷</p>
+    <p>శ్రీమన్నారాయణుని దివ్య నామస్మరణ అందరికీ శుభాన్ని కలిగించుగాక.</p>
+  </footer>
+
+  <script>
+    const search = document.getElementById("search");
+    const searchable = document.querySelectorAll(".searchable");
+    const names = document.getElementById("names");
+    const originalFontSize = 18;
+    let fontSize = originalFontSize;
+
+    search.addEventListener("input", function () {
+      const query = this.value.trim().toLowerCase();
+
+      searchable.forEach(function (element) {
+        element.hidden = !element.textContent
+          .toLowerCase()
+          .includes(query);
+      });
+
+      names.hidden = !Array.from(names.children).some(
+        item => !item.hidden
+      ) && query !== "";
+    });
+
+    document.getElementById("larger").addEventListener("click", () => {
+      fontSize = Math.min(fontSize + 2, 34);
+      document.querySelectorAll(".verse, .name-list").forEach(el => {
+        el.style.fontSize = fontSize + "px";
+      });
+    });
+
+    document.getElementById("smaller").addEventListener("click", () => {
+      fontSize = Math.max(fontSize - 2, 12);
+      document.querySelectorAll(".verse, .name-list").forEach(el => {
+        el.style.fontSize = fontSize + "px";
+      });
+    });
+
+    document.getElementById("theme").addEventListener("click", function () {
+      document.body.classList.toggle("dark");
+      this.textContent = document.body.classList.contains("dark")
+        ? "☀️ పగటి మోడ్"
+        : "🌙 రాత్రి మోడ్";
+    });
+
+    document.getElementById("reset").addEventListener("click", () => {
+      search.value = "";
+      search.dispatchEvent(new Event("input"));
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
